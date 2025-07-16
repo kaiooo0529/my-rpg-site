@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <title>勇者之旅</title>
+  <meta charset="UTF-8" />
+  <title>勇者之旅：初始森林</title>
   <style>
     body {
-      background-color: #fffafc;
+      background-image: url("https://i.imgur.com/Yw3BHrO.png"); /* Q版森林背景圖 */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      height: 100vh;
       font-family: "微軟正黑體", sans-serif;
-      text-align: center;
-      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
     }
-    h1 {
-      font-size: 48px;
-      color: #ff66aa;
-    }
-    p {
-      font-size: 20px;
-      color: #444;
-    }
-    img {
-      width: 200px;
-      margin-top: 20px;
+    .title {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px 40px;
       border-radius: 20px;
-      box-shadow: 0 0 10px rgba(255, 100, 200, 0.4);
+      font-size: 36px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      background: #5bd68f;
+      color: white;
+      font-size: 20px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #4cc481;
     }
   </style>
 </head>
 <body>
+  <div class="title">🌲 歡迎來到初始森林</div>
+  <button class="btn" onclick="alert('冒險即將開始！')">開始探索</button>
+</body>
+</html>
   <h1>🎮 勇者之旅</h1>
   <p>馬克的超可愛冒險世界開啟中！</p>
   <img src="https://i.imgur.com/GwXKkZ3.png" alt="主角預覽">
